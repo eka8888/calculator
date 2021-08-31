@@ -49,3 +49,11 @@ body {
     color: white;
     font-size: 2rem;
 }
+
+@media (max-width: 500px) {
+    .calculator-grid {
+        min-height: 100vh;
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: minmax(80px, auto) repeat(6, 70px);
+    }
+}
